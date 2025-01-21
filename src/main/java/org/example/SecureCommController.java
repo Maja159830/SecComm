@@ -12,7 +12,6 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api")
 class SecureCommController {
-
     private static final SecretKey AES_KEY = generateAESKey();
     private static final IvParameterSpec AES_IV = generateAESIv();
     private static final SecretKey HMAC_KEY = generateHMACKey();
